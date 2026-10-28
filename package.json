@@ -1,0 +1,29 @@
+{
+  "name": "pulsetrack",
+  "version": "1.0.0",
+  "description": "PulseTrack — High-throughput real-time analytics ingestion platform",
+  "scripts": {
+    "start": "node start.js",
+    "test:e2e": "node tests/e2e/flow.test.js",
+    "test:load": "node tests/load/load-test.js",
+    "seed": "node scripts/seed.js",
+    "docker:up": "docker compose up -d --build",
+    "docker:down": "docker compose down",
+    "docker:logs": "docker compose logs -f",
+    "docker:ps": "docker compose ps"
+  },
+  "keywords": [
+    "analytics",
+    "redis-streams",
+    "mongodb",
+    "postgresql",
+    "docker",
+    "microservices",
+    "high-throughput"
+  ],
+  "author": "PulseTrack",
+  "license": "MIT",
+  "dependencies": {
+    "http-proxy": "^1.18.1"
+  }
+}
